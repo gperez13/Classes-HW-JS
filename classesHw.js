@@ -40,6 +40,8 @@ class Dog extends Pet {
 
 
 
+//number 3
+
 const sparky = new Dog('Sparky', 15.99);
 
 sparky.bark();
@@ -48,16 +50,33 @@ sparky.getPrice();
 
 
 
+//number 4
+
+class Cat extends Pet {
+	constructor(name, price){
+		super(name);
+		this.price = price;
+	}
+	purr(){
+		console.log('purrrrrrr')
+	}
+	clean(){
+		console.log('cleaning')
+	}
+	getPrice(){
+		return this.price
+	}
+}
 
 
+// number 5
+
+const sprinkles = new Cat('Sprinkles', 'free')
 
 
-
-
-
-
-
-
+sprinkles.purr();
+sprinkles.clean();
+sprinkles.getPrice();
 
 
 
